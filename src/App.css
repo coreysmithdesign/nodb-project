@@ -1,38 +1,127 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contain {
+  width: 100vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.border {
+  border: 1px  solid #b7bbbf;
+}
+
+/* app header */
+.app-header {
+  background-color: #363636;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-icon {
+  width: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app-title {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 600px)  {
+  .app-header .contain {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .app-icon {
+    margin-right: 2rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* materials component */
+.add-button {
+  background: #b7edb7;
+  border: none;
+  border-radius: 6px;
+  padding: .5rem 1.2rem;
+  color: #363636;
+  font-size: 1rem;
+}
+.add-button:hover {
+  cursor: pointer;
+  background: #96dc96;
 }
 
-.App-link {
-  color: #61dafb;
+.material-cell.add-cell {
+  padding: 1rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.material {
+  width: 100%;
+}
+
+.material-table-list {
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.material-table-list li:nth-of-type(odd){
+  background: #ededf3;
+}
+
+.material-cell {
+  display: block;
+  padding: .5rem;
+  margin: .5rem 0;
+  width: 100%;
+}
+
+.material-header {
+  display: none;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 600px)  {
+  .material-table-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .material-row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:100%;
+  }
+
+  .material-cell:last-of-type {
+    text-align: right;
+  }
+
+  .material-header {
+    display: static;
+  }
+
+  .type-number {
+    text-align: right;
+  }
+}
+
+/* app footer */
+.app-footer {
+  bottom: 0px;
+  width: 100%;
+  margin-top: -2rem;
+}
+
+@media only screen and (min-width: 600px)  {
+  .tally-totals {
+    font-size: 1.5rem;
   }
 }
