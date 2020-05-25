@@ -15,10 +15,12 @@ function Material(props) {
   return(
     <div className="contain">
       <div className="material">
+        <h2 className="material-heading">Add Materials</h2>
         <div className="material-table-list">
           <MaterialAdder addMaterial={props.addMaterial}/>
         </div>
 
+        <h2 className="material-heading">All Materials</h2>
         <ul className="material-table-list border">
           <MaterialHeader />
           {materialMap}

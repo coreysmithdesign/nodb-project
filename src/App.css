@@ -44,11 +44,11 @@
 
 /* materials component */
 .add-button {
-  background: #b7edb7;
+  background: #66d666;
   border: none;
   border-radius: 6px;
   padding: .5rem 1.2rem;
-  color: #363636;
+  color: white;
   font-size: 1rem;
 }
 .add-button:hover {
@@ -68,6 +68,10 @@
   margin: 2rem 0;
   padding: 0;
   list-style: none;
+}
+
+.material-table-list label {
+  font-weight: bold;
 }
 
 .material-table-list li:nth-of-type(odd){
