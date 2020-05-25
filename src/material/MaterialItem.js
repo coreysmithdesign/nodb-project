@@ -74,16 +74,16 @@ class MaterialItem extends Component {
         ) : (
           <form className="material-row" onSubmit={this.handleSubmit}>
             <span className="material-cell">
-              <input htmlFor="item" type="text" name="item" value={this.props.data.item} onChange={this.handleChange} />
+              <input htmlFor="item" type="text" name="item" onChange={this.handleChange} />
             </span>
             <span className="material-cell">
-              <input htmlFor="from" type="text" name="from" value={this.props.data.from} onChange={this.handleChange} />
+              <input htmlFor="from" type="text" name="from" onChange={this.handleChange} />
             </span>
             <span className="material-cell type-number">
-              <input htmlFor="quantity" type="text" name="quantity" value={this.props.data.quantity} onChange={this.handleChange} />
+              <input className="type-number" htmlFor="quantity" type="text" name="quantity" onChange={this.handleChange} />
             </span>
             <span className="material-cell type-number">
-              <input htmlFor="price" type="text" name="price" value={this.props.data.price} onChange={this.handleChange} />
+              <input className="type-number" htmlFor="price" type="text" name="price" onChange={this.handleChange} />
             </span>
             <span className="material-cell"></span>
             <span className="material-cell">

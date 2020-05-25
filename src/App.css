@@ -10,6 +10,12 @@ body {
   color: #363636;
 }
 
+input:focus {
+    outline: none !important;
+    border:1px solid #d4dc9f;
+    box-shadow: 0 0 10px #d4dc9f;
+}
+
 .contain {
   width: 100vw;
   max-width: 1000px;
@@ -18,7 +24,7 @@ body {
 }
 
 .border {
-  border: 1px  solid #d4dc9f;
+  border: 2px solid #d4dc9f;
 }
 
 /* app header */
@@ -69,11 +75,12 @@ body {
   color: #363636;
   font-size: 1rem;
   border: 1px solid #d4dc9f;
+  font-weight: bold;
 }
 .add-button:hover {
   cursor: pointer;
   background: #cdd695;
-  border: 1px solid #b8bf88;
+  border: 2px solid #b8bf88;
 }
 
 .material-cell.add-cell {
@@ -108,7 +115,11 @@ body {
   width: 100%;
 }
 
+.material-row {
+  padding: 1rem;
+}
 .items .material-cell {
+  padding: 0;
   margin: 0;
 }
 
@@ -116,6 +127,7 @@ body {
   display: none;
   font-weight: bold;
   background-color: #e6edb7;
+  border-bottom: 2px solid #d4dc9f;
 }
 
 .material-adder input {
@@ -138,17 +150,19 @@ body {
     justify-content: space-evenly;
     align-items: center;
     width:100%;
+    padding: 0;
   }
 
   .items .material-cell {
-    margin: 0.5rem 0;
+    margin: 0.5rem;
   }
 
   .material-item span:first-of-type {
     font-weight: normal
   }
-  .material-cell:last-of-type {
-    text-align: right;
+
+  .material-item input {
+    padding: .22rem;
   }
 
   .material-header {
@@ -170,5 +184,6 @@ body {
 @media only screen and (min-width: 600px)  {
   .tally-totals {
     font-size: 1.5rem;
+    font-weight: bold;
   }
 }
