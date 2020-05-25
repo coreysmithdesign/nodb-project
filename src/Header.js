@@ -6,7 +6,7 @@ function Header() {
     <header className="app-header">
       <div className="contain">
         <img className="app-icon" src={icon} alt="Icon" />
-        <h1 className="app-title">Material Tracker</h1>
+        <h1 className="app-title">Material Tracker <span className="post">House Construction</span></h1>
       </div>
     </header>
   )

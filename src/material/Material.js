@@ -21,7 +21,7 @@ function Material(props) {
         </div>
 
         <h2 className="material-heading">All Materials</h2>
-        <ul className="material-table-list border">
+        <ul className="material-table-list items border">
           <MaterialHeader />
           {materialMap}
         </ul>

@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f7;
+  color: #363636;
+}
+
 .contain {
   width: 100vw;
   max-width: 1000px;
@@ -12,7 +18,7 @@
 }
 
 .border {
-  border: 1px  solid #b7bbbf;
+  border: 1px  solid #d4dc9f;
 }
 
 /* app header */
@@ -30,6 +36,13 @@
   font-size: 2rem;
 }
 
+.post {
+  color: #e6edb7;
+  font-weight: 100;
+  font-size: 1.25rem;
+  display: block;
+}
+
 @media only screen and (min-width: 600px)  {
   .app-header .contain {
     display: flex;
@@ -40,20 +53,27 @@
   .app-icon {
     margin-right: 2rem;
   }
+
+  .post {
+    display: inline;
+    font-size: inherit;
+  }
 }
 
 /* materials component */
 .add-button {
-  background: #66d666;
+  background: #e6edb7;
   border: none;
   border-radius: 6px;
   padding: .5rem 1.2rem;
-  color: white;
+  color: #363636;
   font-size: 1rem;
+  border: 1px solid #d4dc9f;
 }
 .add-button:hover {
   cursor: pointer;
-  background: #96dc96;
+  background: #cdd695;
+  border: 1px solid #b8bf88;
 }
 
 .material-cell.add-cell {
@@ -74,8 +94,11 @@
   font-weight: bold;
 }
 
-.material-table-list li:nth-of-type(odd){
-  background: #ededf3;
+.material-item:nth-of-type(odd){
+  background-color: #f7f9e9;
+}
+.material-item:nth-of-type(even){
+  background-color: #fefff6;
 }
 
 .material-cell {
@@ -85,8 +108,21 @@
   width: 100%;
 }
 
+.items .material-cell {
+  margin: 0;
+}
+
 .material-header {
   display: none;
+  font-weight: bold;
+  background-color: #e6edb7;
+}
+
+.material-adder input {
+  border: 2px solid #d4dc9f;
+}
+
+.material-item span:first-of-type {
   font-weight: bold;
 }
 
@@ -104,6 +140,13 @@
     width:100%;
   }
 
+  .items .material-cell {
+    margin: 0.5rem 0;
+  }
+
+  .material-item span:first-of-type {
+    font-weight: normal
+  }
   .material-cell:last-of-type {
     text-align: right;
   }
